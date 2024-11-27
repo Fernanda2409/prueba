@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --primary-color: #034134;
+    --secondary-color: #ffffff;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Menú */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Ubuntu", cursive;
+    background-color: #ffffff;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-logo{
+    border-radius: 50%;
+    width: 10%;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(IMAGENES/img3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #B7975B;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    width: 50%;
+}
+
+.header-txt h1{
+    font-size: 75px;
+    line-height: 110px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: #E0E0E0;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 45px;
+    background-color: #B7975B;
+    color: white;
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.btn-1:hover{
+    background-color: #a08450;
+}
+/* Contenido principal */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+/* Footer */
+.footer-div {
+    background-color: var(--primary-color);
+    padding: 35px;
+}
+
+.footer-div p {
+    color: white;
+}
+
+.footer-div .redes {
+    text-align: right;
+    font-size: 30px;
+}
+
+/* Formulario de búsqueda */
+form {
+    padding: 20px;
+    background-color: #1a512f;
+    border-radius: 10px;
+    width: 600px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo {
+    font-size: 1.2em;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.texto {
+    font-size: 0.9em;
+    color: #f7f7f7;
+    margin: 0;
+    text-align: left;
+}
+
+.input-colonia,
+.input-precio {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.input-precio {
+    width: 45%;
+    display: inline-block;
+}
+
+.button {
+    padding: 10px;
+    background-color: #B7975B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 80px;
+    text-align: center;
+}
+
+label {
+    font-size: 0.9em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
