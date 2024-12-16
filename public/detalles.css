@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.content {
+    margin-top: 100px;
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-bottom: 100px;
+    
+}
+
+/* Contenedor principal */
+.detalle-contenedor {
+    display: flex; /* Alineación en fila */
+    flex-wrap: wrap; /* Adapta a pantallas pequeñas */
+    align-items: flex-start; /* Alinea verticalmente */
+    background-color: #eaeaea; /* Rectángulo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+/* Imagen */
+.imagen-contenedor {
+    flex-shrink: 0; /* Impide que la imagen se reduzca en pantallas pequeñas */
+}
+
+.foto-detalle {
+    max-width: 400px; /* Limita el ancho de la imagen */
+    width: 100%; /* Imagen responsive */
+    height: auto; /* Mantiene proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: white; /* Fondo blanco */
+}
+
+/* Información */
+.info-detalle {
+    flex: 1; /* El texto ocupa el espacio restante */
+    text-align: justify; /* Justificar el texto */
+    padding: 20px; /* Espaciado interno */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.info-detalle h1 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.info-detalle p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .detalle-contenedor {
+        flex-direction: column; /* Apila los elementos en pantalla pequeña */
+    }
+
+    .info-detalle {
+        text-align: center; /* Texto centrado en móviles */
+    }
+
+    .foto-detalle {
+        margin: 0 auto; /* Centra la imagen */
+    }
+}
+.propiedad-detalles{
+    align-items: flex-end;
+}
+
+
+
+
+
+
+/* Footer */
+.footer-div {
+    background-color: black;
+    padding: 35px;
+    color: white;
+    text-align: center;
+}
+
+.footer-div .redes ion-icon {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+/*Barra de navegacion*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    z-index: 1000;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu.hidden {
+    transform: translateY(-100%);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    padding: 5px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+/* Hover en texto */
+.navbar a:hover {
+    color: var(--highlight-color);
+    transition: color 0.3s ease;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navbar a {
+        border: none;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    #menu-toggle:checked + .menu-icon + .navbar {
+        display: block;
+    }
+}
+
+
+.menu .navbar ul li a:hover {
+    color: #034134;
+}
+
+/*Aqui acaba la barra de navegacion*/
+
+
+/*CONTENT Y SOPORTA*/
+.content{
+    margin-top: 100px;
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-bottom: 100px;
+}
+
+/*Año*/
